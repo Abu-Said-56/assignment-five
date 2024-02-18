@@ -9,9 +9,17 @@
     <!-- Daisy link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap')
 
-    <!-- Button color -->
     <style>
+        /* Raleway font */
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap');
+    .raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+/* button color */
         .button-green{
             background-color: #1DD100;
     }
@@ -24,7 +32,7 @@
      <section class="container justify-between w-full m-auto">
         <div class="navbar">
             <div class="flex-1">
-              <a class="btn btn-ghost text-2xl">P-Ticket</a>
+              <a class="btn btn-ghost text-3xl">P-Ticket</a>
             </div>
 
             <div class="flex">
@@ -43,7 +51,7 @@
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
-                <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with 
+                <h1 class="mb-5 text-4xl raleway-font">End-to-End Travel with 
                 <br>
                 <span class="span-1">P Paribahan</span></h1>
                 <p class="mb-5"><small>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</small></p>
@@ -51,6 +59,46 @@
               </div>
             </div>
           </div>
+
+     </section>
+     <!-- Banner er nicher part -->
+     <section class="pt-8"> 
+            
+        <div class="flex flex-col md:flex-col-1 lg:flex-col-2">
+
+            <h3 class="text-center text-2xl text-green-700">Best offers for you</h3>
+            <div class="flex gap-5 ">
+            <div class="w-full flex justify-between bg-[#FFBF0F] rounded-2xl">
+               
+               <div>
+               <h3 class="text-5xl">15% OFF</h3>
+               <p>on your next purchase</p>
+               <small>use by January 2024</small>
+               </div>
+               <div>
+               <img src="./images/cupon-devider.png">
+               </div>
+               <div class="">
+                   <p class="raleway-font text-2xl">New 15</p>
+                   <p>Coupon Code </p>
+               </div>
+            </div>
+
+            <div class="flex justify-between w-full bg-[#F78C9C] rounded-2xl">
+               <div>
+                   <h3 class="text-5xl">20% OFF</h3>
+                   <p>on your next purchase</p>
+                   <small>use by January 2024</small></div>
+               <div><img src="./images/cupon-devider.png" alt=""></div>
+               <div>
+                   <p class="text-2xl raleway-font">Couple 20</p>
+                   <p>Coupon Code</p>
+               </div>
+            </div>
+           </div>
+
+        </div>
+            
      </section>
 
 
