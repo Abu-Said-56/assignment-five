@@ -25,8 +25,8 @@
     </style>
 
 </head>
-<body class="w-[80%] m-auto">
-   <main>
+<body>
+   <main class="w-[80%] m-auto">
      <!-- navbar section -->
      <section class="container justify-between w-full m-auto">
         <div class="navbar">
@@ -61,15 +61,15 @@
 
      </section>
      <!-- Banner er nicher part -->
-     <section class="pt-8"> 
+     <section class="mt-20 mb-12"> 
             
         <div class="flex flex-col md:flex-col-1 lg:flex-col-2">
 
-            <h3 class="text-center text-2xl text-green-700">Best offers for you</h3>
+            <h3 class="text-center text-2xl text-green-700 pb-8">Best offers for you</h3>
             <div class="flex gap-5 ">
             <div class="w-full flex justify-between bg-[#FFBF0F] rounded-2xl">
                
-               <div class="flex flex-col items-center justify-center pl-10">
+               <div class="flex flex-col items-center justify-center pl-8">
                <h3 class="text-5xl ">15% OFF</h3>
                <p class="raleway-font">on your next purchase</p>
                <small class="">use by January 2024</small>
@@ -77,14 +77,14 @@
                <div>
                <img src="./images/cupon-devider.png">
                </div>
-               <div class="flex flex-col items-center justify-center pr-10">
+               <div class="flex flex-col items-center justify-center pr-8">
                    <p class="raleway-font text-2xl">New 15</p>
                    <p>Coupon Code </p>
                </div>
             </div>
 
             <div class="flex justify-between w-full bg-[#F78C9C] rounded-2xl">
-               <div class="flex flex-col items-center justify-center pl-10">
+               <div class="flex flex-col items-center justify-center pl-8">
                    <h3 class="text-5x lraleway-font">20% OFF</h3>
                    <p>on your next purchase</p>
                    <small>use by January 2024</small></div>
@@ -104,10 +104,12 @@
 
 <!-- P Paribahan Section -->
      
-<button class="btn text-green-600 text-xl border-green-500 rounded-lg">See All Offers</button>
-<section class="pt-10 gap-10 bg-slate-50">
+<div class="flex justify-center">
+    <button class="btn text-green-600 text-xl border-green-500 rounded-lg">See All Offers</button>
+</div>
+<section class="mt-10 gap-10 pt-10 shadow-md p-2">
               <!-- Ph paribahan section title -->
-    <div class="text-center justify-center items-center pb-10">
+    <div class="text-center justify-center items-center pt-10 pb-10 mb-5 bg-slate-50">
         <h2 class="text-3xl raleway-font">P.H Paribahan</h2>
         <p>Yes, you can run unit tests and view the results directly within the app. The integrated 
         <br>
@@ -115,7 +117,7 @@
     </div>
     <div class=" flex justify-between items-center m-auto rounded-lg bg-white">
               <!-- programming poribahan container  part -->
-        <div class="w-[70%] gap-8">
+        <div class="w-[70%] gap-2">
              <!-- Bus logo part -->
             <div class="flex justify-between">
                 <div class="flex justify-center  gap-3 items-center pb-2">
@@ -154,7 +156,7 @@
             </div>
             
             <!-- 550 taka part -->
-        <div class="w-auto flex flex-col justify-center items-center text-center">
+        <div class="w-auto flex pr-12 flex-col justify-center text-center">
             <img src="images/fare.png">
             <h3 class="raleway-font flex justify-center items-center">550 Taka</h3>
             <small>Per seat</small>
@@ -163,10 +165,10 @@
     </div>
 </section>
     <!-- Seat Section  -->
-    <section class="pt-10 bg-slate-400">
+    <section class="mt-20 bg-white shadow-md p-2">
         <div class="flex justify-between">
             <!-- Leaft Side seat section -->
-            <div class="w-[70%] pr-10 border-r-2 border-dashed">
+            <div class="w-[65%] pr-10 border-r-2 border-dashed">
                 <h3 class="p-3 border-b-2 border-dashed">Select Your Seat</h3>
                 <div class="flex justify-between p-3 border-b-2 border-dashed">
                     <div class="flex justify-between items-center gap-2">
@@ -227,11 +229,11 @@
             </div>
 
                 <!-- Right side seat section (First half) -->
-            <div class="w-[25%] ">
+            <div class="w-[30%] ">
                 <h3 class="p-3 border-b-2 border-dashed">Select Your Seat</h3>
                 <div class="bg-slate-100 rounded-lg">
 
-                    <div class="flex justify-between p-3 border-b-2 border-dashed">
+                    <div class="flex justify-between p-3 pt-2 border-b-2 border-dashed">
                         <p>seat</p>
                         <p>class</p>
                         <p>Price</p>
@@ -251,15 +253,15 @@
                         <p>BDT 550</p>
                     </div>
                     <!-- applay button section -->
-                    <div class="">
+                    <div class="relative">
                         <input class="p-4 rounded-lg w-full" type="text" placeholder="Have any copupon?">
-                        <button class="btn button-green border-none">Apply</button>
+                        <button class="btn button-green border-none absolute right-2 top-1">Apply</button>
                     </div>
                     <div class="flex justify-between p-4">
                         <h3>Grand Total</h3>
                         <h3>BDT 1100</h3>
                     </div>
-
+                    
                 </div>
                     <!-- Right side seat section (Second half) -->
                 <div class="bg-white">
@@ -285,27 +287,36 @@
             </div>
         </div>
     </section>
-   </main>
-   <!-- Footer Section -->
-   <!-- <footer class="bg-black text-white h-60 flex justify-center items-center ">
-    Footer left side
-   <div class="">
-    <div>
-        <h2>P-Ticket</h2>
-        <p>P-Ticket is a digital platform to make your daily commuting better.</p>
-    </div>
 
-        Footer right side
-    <div class="">
-        <div>
-            <p>Download our app</p>
-        </div>
-        <div class="flex justify-center items-center">
-            <img src="images/playstore.png">
-            <p><small>Get on</small>Google Play</p>
-        </div>
-     </div>
-   </div>
-   </footer> -->
+       <!-- Success Section --> 
+    <section class="mt-10 shadow-lg ">
+            <!-- success tik div -->
+                <div class="">
+                    <div class="flex justify-center">
+                        <img src="images/success.png">
+                    </div>                
+                        <div class="flex justify-center pt-5">
+                            <h3 class="uppercase text-green-600">success</h3>
+                        </div>
+                </div>
+            <!-- Success pragraph div -->
+                
+                    <div class=" flex justify-center items-center">
+                        <div>
+                            <div class="flex justify-center items-center pt-3">
+                                <p>Thank you for Booking Our Bus Seats. 
+                                We are working hard to find the best service and deals for you.
+                                </p>
+                            </div>
+                            <div class="flex justify-center pt-3">
+                                <small>Shortly you will find a confirmation in your email.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center pt-5">
+                        <button class="btn bg-[#27AE60] border-none uppercase rounded-3xl w-[30%]">Continue</button>
+                    </div>                
+    </section>
+   </main>
 </body>
 </html>
