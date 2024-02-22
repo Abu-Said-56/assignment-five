@@ -78,7 +78,7 @@
                <img src="./images/cupon-devider.png">
                </div>
                <div class="flex flex-col items-center justify-center pr-8">
-                   <p class="raleway-font text-2xl">New 15</p>
+                   <p class="raleway-font text-2xl">New15</p>
                    <p>Coupon Code </p>
                </div>
             </div>
@@ -105,7 +105,7 @@
      <div class="flex justify-center">
     <button class="btn text-green-600 text-xl border-green-500 rounded-lg">See All Offers</button>
      </div>
-     <section class="mt-10 gap-10 pt-10 shadow-md p-2">
+     <section class="mt-10 gap-10 pt-10 p-2 bg-[#F7F8F8] border-t-2 border-green-400 rounded-2xl">
               <!-- Ph paribahan section title -->
     <div class="text-center justify-center items-center pt-10 pb-10 mb-5 bg-slate-50">
         <h2 class="text-3xl raleway-font">P.H Paribahan</h2>
@@ -123,9 +123,9 @@
                         <h3>Greenline Paribahan <br><small>Coach-009-WEB ! AC_Business</small></h3>
                     
                 </div>
-                <div class="flex justify-center items-center gap-2 bg-green-200 border-2 border-green-400 rounded-2xl px-2 ">
+                <div class="flex justify-center items-center gap-2 bg-green-100 border-2 border-green-400 rounded-2xl px-2 ">
                     <img src="images/seat-green.png">
-                    <p class="text-green-600">40 Seat Left</p>
+                    <p class="text-green-600"><span id="Available_seat">40</span> Seat Left</p>
                 </div>
             </div>
             <!-- Dhaka - - Sylhet -->
@@ -173,7 +173,7 @@
                         <img src="images/seat-gray.png">
                         <small>Available</small>
                     </div>
-                    <div class="flex justify-between items-center gap-2 bg-green-300 p-1 rounded-lg">
+                    <div class="flex justify-between items-center gap-2 bg-green-200 p-1 rounded-lg">
                         <img src="images/seat-green-filled.png">
                         <small class="text-green-700">Selected</small>
                     </div>                   
@@ -182,82 +182,77 @@
                     <img src="images/tabler-icon-steering-wheel.png">
                 </div>
                 <!-- Seat Button -->
-                <div class="grid grid-cols-4 gap-5">
-                    <kbd class="kbd p-4">A1</kbd>
-                    <kbd class="kbd p-4">A2</kbd>
-                    <kbd class="kbd p-4">A3</kbd>
-                    <kbd class="kbd p-4">A4</kbd>
-                    <kbd class="kbd p-4">B1</kbd>
-                    <kbd class="kbd p-4">B2</kbd>
-                    <kbd class="kbd p-4">B3</kbd>
-                    <kbd class="kbd p-4">B4</kbd>
-                    <kbd class="kbd p-4">C1</kbd>
-                    <kbd class="kbd p-4">C2</kbd>
-                    <kbd class="kbd p-4">C3</kbd>
-                    <kbd class="kbd p-4">D1</kbd>
-                    <kbd class="kbd p-4">C4</kbd>
-                    <kbd class="kbd p-4">D2</kbd>
-                    <kbd class="kbd p-4">D3</kbd>
-                    <kbd class="kbd p-4">D4</kbd>
-                    <kbd class="kbd p-4">E1</kbd>
-                    <kbd class="kbd p-4">E2</kbd>
-                    <kbd class="kbd p-4">E3</kbd>
-                    <kbd class="kbd p-4">E4</kbd>
-                    <kbd class="kbd p-4">F1</kbd>
-                    <kbd class="kbd p-4">F2</kbd>
-                    <kbd class="kbd p-4">F3</kbd>
-                    <kbd class="kbd p-4">F4</kbd>
-                    <kbd class="kbd p-4">G1</kbd>
-                    <kbd class="kbd p-4">G2</kbd>
-                    <kbd class="kbd p-4">G3</kbd>
-                    <kbd class="kbd p-4">G4</kbd>
-                    <kbd class="kbd p-4">H1</kbd>
-                    <kbd class="kbd p-4">H2</kbd>
-                    <kbd class="kbd p-4">H3</kbd>
-                    <kbd class="kbd p-4">H4</kbd>
-                    <kbd class="kbd p-4">I1</kbd>
-                    <kbd class="kbd p-4">I2</kbd>
-                    <kbd class="kbd p-4">I3</kbd>
-                    <kbd class="kbd p-4">I4</kbd>
-                    <kbd class="kbd p-4">J1</kbd>
-                    <kbd class="kbd p-4">J2</kbd>
-                    <kbd class="kbd p-4">J3</kbd>
-                    <kbd class="kbd p-4">J4</kbd>
+                <div onclick="" class="grid grid-cols-4 gap-5">
+                    <kbd class="kbd p-4 busSeatsNumber">A1</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">A2</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">A3</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">A4</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">B1</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">B2</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">B3</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">B4</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">C1</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">C2</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">C3</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">D1</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">C4</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">D2</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">D3</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">D4</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">E1</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">E2</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">E3</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">E4</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">F1</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">F2</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">F3</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">F4</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">G1</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">G2</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">G3</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">G4</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">H1</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">H2</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">H3</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">H4</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">I1</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">I2</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">I3</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">I4</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">J1</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">J2</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">J3</kbd>
+                    <kbd class="kbd p-4 busSeatsNumber">J4</kbd>
                 </div>
             </div>
 
                 <!-- Right side seat section (First half) -->
             <div class="w-[30%] ">
                 <h3 class="p-3 border-b-2 border-dashed">Select Your Seat</h3>
-                <div class="bg-slate-100 rounded-lg">
+                <div class="bg-slate-100 rounded-lg p-3">
 
                     <div class="flex justify-between p-3 pt-2 border-b-2 border-dashed">
-                        <p>seat</p>
+                        <p>seat <span id="selected_seat" class="bg-[#1DD100] px-2 text-white rounded-xl">0</span></p>
                         <p>class</p>
                         <p>Price</p>
                     </div>
-                    <div class="flex justify-between p-3 ">
-                        <p>c<small>2</small></p>
-                        <p>Economy </p>
-                        <p>Price</p>
-                    </div>
-                    <div class="flex justify-between p-3 border-b-2 border-solid">
-                        <p>c<small>2</small></p>
-                        <p>Economy </p>
-                        <p>Price</p>
-                    </div>
-                    <div class="flex justify-between p-3 ">
+                    <!-- apend -->
+                   <div id="apend-place" >
+
+                   </div>
+                    
+                    <div class="flex justify-between border-t-2 border-dashed p-3 ">
                         <p>Total Price</p>
-                        <p>BDT 550</p>
+                        <p>BDT <span id="Total_tk">0</span></p>
                     </div>
                     <!-- applay button section -->
-                    <div class="relative">
-                        <input class="p-4 rounded-lg w-full" type="text" placeholder="Have any copupon?">
-                        <button class="btn button-green border-none absolute right-2 top-1">Apply</button>
+                    <div id="Dicount_div" class="relative pb-3">
+                        <input id="input_coupon" class="p-4 rounded-lg w-full" type="text" placeholder="Have any copupon?">
+                        <button onclick="dicountByCoupon()" class="btn button-green border-none absolute right-2 top-1">Apply</button>
                     </div>
-                    <div class="flex justify-between p-4">
+                    <div class="flex justify-between border-t-2 border-dashed pt-2 p-4">
                         <h3>Grand Total</h3>
-                        <h3>BDT 1100</h3>
+                        <h3>BDT <span id="grand_tk">0</span></h3>
                     </div>
 
                 </div>
@@ -276,7 +271,7 @@
                         <h2 class="p-3">Email Id</h2>
                         <input class="p-4 rounded-lg w-full" type="text" placeholder="Enter your email id">
                     </div>
-                    <button class="btn button-green border-none w-full">Next</button>
+                    <button onclick="showSuccess()" class="btn button-green border-none w-full">Next</button>
                     <div class="flex justify-between p-4">
                         <small>Terms and Conditions</small>
                         <small>Cancellation Policy</small>
@@ -285,11 +280,16 @@
             </div>
         </div>
      </section>
- 
-     <!-- Success Section --> 
-     <section class="mt-10 shadow-lg ">
-            <!-- success tik div -->
-                <div class="">
+
+
+     <!-- modal for nextButton -->
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+                <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+                <dialog id="next_btn_modal" class="modal modal-bottom sm:modal-middle">
+                  <div class="modal-box">
+
+                   <div class="">
                     <div class="flex justify-center">
                         <img src="images/success.png">
                     </div>                
@@ -302,7 +302,7 @@
                     <div class=" flex justify-center items-center">
                         <div>
                             <div class="flex justify-center items-center pt-3">
-                                <p>Thank you for Booking Our Bus Seats. 
+                                <p class="text-center m-auto">Thank you for Booking Our Bus Seats. 
                                 We are working hard to find the best service and deals for you.
                                 </p>
                             </div>
@@ -311,10 +311,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center pt-5">
-                        <button class="btn bg-[#27AE60] border-none uppercase rounded-3xl w-[30%]">Continue</button>
-                    </div>                
-     </section>
+                        
+                    <div class="modal-action">
+                      <form method="dialog " class="m-auto text-center">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-[#27AE60] border-none uppercase rounded-3xl ">Continue</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+        </section>
+
+
+     <!--  -->
    </main>
+   <script src="JsCode.js/javaScript.js"></script>
 </body>
 </html>
