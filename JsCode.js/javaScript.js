@@ -4,19 +4,22 @@ function showSuccess(){
     const modalDiv = document.getElementById('next_btn_modal');
     modalDiv.showModal();
 }
-
-
 // seat select part
 
 let count = 0;
 
+//
 const seat = document.getElementsByClassName('busSeatsNumber');
+
+const ClickedSeatButton = new Array(seat.length).fill(false);
 //console.log(seat)
 for (let i =0; i< seat.length; i++){
 
     seat[i].addEventListener('click',function(event){
 
 if( count < 4){
+    if(!ClickedSeatButton[i]){
+ClickedSeatButton[i] = true ;
 
         event.target.style.backgroundColor = '#1DD100';
         event.target.style.color = 'white';
@@ -61,7 +64,7 @@ const grandPrice = getValueOfNumByID('grand_tk');
 const currentGrandTK = grandPrice + 550 ;
 setValuByID('grand_tk',currentGrandTK);
 
-count++;
+count++;}
 
 }else{
     alert(`You already selecte 4 seat`);
@@ -102,18 +105,12 @@ function dicountByCoupon(){
 }
 
 
-
-
-
-
-
-
 //function part
 function getValueOfNumByID(event){
     const seatNumberElement = document.getElementById(event);
     const seatNumberText = seatNumberElement.innerText;
     const seatNumber = parseInt(seatNumberText);
-console.log('seat number : ',seatNumber)
+    console.log('seat number : ',seatNumber)
     return seatNumber;
 }
 
